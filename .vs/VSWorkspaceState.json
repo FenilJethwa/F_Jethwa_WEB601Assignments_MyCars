@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\F_Jethwa_MyCars",
+    "\\F_Jethwa_MyCars\\src",
+    "\\F_Jethwa_MyCars\\src\\app",
+    "\\F_Jethwa_MyCars\\src\\app\\content-card",
+    "\\F_Jethwa_MyCars\\src\\app\\content-list",
+    "\\F_Jethwa_MyCars\\src\\app\\Directives",
+    "\\F_Jethwa_MyCars\\src\\app\\helper-files",
+    "\\F_Jethwa_MyCars\\src\\app\\pipes"
+  ],
+  "SelectedNode": "\\F_Jethwa_MyCars\\src\\app\\content-list\\content-list.component.ts",
+  "PreviewInSolutionExplorer": false
+}
