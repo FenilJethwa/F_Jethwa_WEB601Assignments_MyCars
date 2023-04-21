@@ -12,4 +12,8 @@ export class MyCarsService {
     const cars = contents;
     return of(cars);
   }
+  getCarById(id: number): Observable<any> {
+    const car = contents.find(content => content.id === id);
+    return of(car);
+  }
 }
