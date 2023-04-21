@@ -1,11 +1,16 @@
-<section class="messages" *ngIf="MessageService.messages.length">
-    <h2>Messages</h2>
-    <div class="clrBtn">
-        <button (click)="MessageService.clear()">Clear</button>
+<section class="messages-sec" *ngIf="MessageService.messages.length">
+    <div class="messages">
+        <h2>Messages</h2>
+
+        <ul>
+            <li *ngFor="let message of MessageService.messages">
+                {{message}}
+            </li>
+        </ul>
+
+        <div class="clrBtn">
+            <button (click)="MessageService.clear()">Clear</button>
+        </div>
     </div>
-    <ul>
-        <li *ngFor="let message of MessageService.messages">
-            {{message}}
-        </li>
-    </ul>
-</section>
+  </section>
+
