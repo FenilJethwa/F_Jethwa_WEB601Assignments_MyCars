@@ -112,5 +112,9 @@ export class ContentListComponent {
       cardElements.forEach(card => card.classList.remove('matched'));
     }
   }
+  addNewCar(newCar: Content) {
+    this.contents.push(newCar);
+    this.contents = [...this.contents];
+  }
 
 }

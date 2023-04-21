@@ -1,4 +1,6 @@
 <main>
+  <app-create-content (addCarEvent)="addNewCar($event)"></app-create-content>
+
   <section class="searchForTitle">
     <div>
       <input type="text" [(ngModel)]="searchTitle" placeholder="Search Title here...">
@@ -22,7 +24,7 @@
       </div>
       <ng-template #defaultImage>
         <img [src]="content.imgURL" alt={{content.title}} (click)="handleClick(content)">
-      </ng-template> 
+      </ng-template>
 
       <h2>{{content.title}}</h2>
       <p>{{content.description}}</p>
