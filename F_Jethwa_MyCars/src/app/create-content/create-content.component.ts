@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, EventEmitter, Output } from '@angular/core';
+import { Content } from '../helper-files/content-interface';
 
 @Component({
   selector: 'app-create-content',
@@ -9,4 +9,12 @@ import { Component } from '@angular/core';
   
 export class CreateContentComponent {
 
+
+newCar: any = {};
+@Output() addCarEvent = new EventEmitter<Content>();
+
+addNewCar(){
+  this.addCarEvent.emit(this.newCar);
+  this.newCar = {};
+}
 }
