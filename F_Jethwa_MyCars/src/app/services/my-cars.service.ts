@@ -10,6 +10,10 @@ import { MessageService } from './message.service';
 })
 export class MyCarsService {
 
+  private httpOptions = {
+    headers: new HttpHeaders({ "Content-Type": "application/json" })
+  }
+
   constructor(private http: HttpClient, private MessageService: MessageService) { }
 
   getCars(): Observable<Content[]> {
@@ -17,6 +21,7 @@ export class MyCarsService {
     this.MessageService.add("Content array loaded!");
     return this.http.get<Content[]>("/api/cars");
   }
+
   addCar(newCar: Content): Observable<Content> {
     this.MessageService.add(`New Car added`);
     return this.http.post<Content>("/api/cars", newCar, this.httpOptions);
