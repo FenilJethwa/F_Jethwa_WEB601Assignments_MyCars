@@ -11,11 +11,17 @@ import { MessageService } from './message.service';
 export class MyCarsService {
 
   constructor(private http: HttpClient, private MessageService: MessageService) { }
+
   getCars(): Observable<Content[]> {
-    const cars = contents;
+    
     this.MessageService.add("Content array loaded!");
     return this.http.get<Content[]>("/api/cars");
   }
+  ddCar(newCar: Content): Observable<Content> {
+    this.MessageService.add(`New Car added`);
+    return this.http.post<Content>("/api/cars", newCar, this.httpOptions);
+  }
+
   getCarById(id: number): Observable<any> {
     const car = contents.find(content => content.id === id);
     if (car) {
