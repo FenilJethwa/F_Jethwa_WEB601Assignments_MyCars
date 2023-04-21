@@ -21,7 +21,7 @@ export class ContentListComponent {
         creator: 'Me',
         imgURL: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1283&q=80',
         type: 'Super',
-        tags: ['Tag 1', 'Tag 2'],
+        tags: ['Tag 1', 'Tag 2']
       },
       {
         id: 2,
@@ -30,7 +30,7 @@ export class ContentListComponent {
         creator: 'F Jethwa',
         imgURL: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
         type: 'Hyper',
-        tags: ['Tag 3', 'Tag 4'],
+        tags: ['Tag 3', 'Tag 4']
       },
       {
         id: 3,
@@ -39,7 +39,7 @@ export class ContentListComponent {
         creator: 'R Chalthanwala',
         imgURL: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
         type: 'Sport',
-        tags: ['Tag 5', 'Tag 6'],
+        tags: ['Tag 5', 'Tag 6']
       },
       {
         id: 4,
@@ -48,7 +48,7 @@ export class ContentListComponent {
         creator: 'Rajvir',
         imgURL: 'https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=452&q=800',
         type: 'Super',
-        tags: ['Tag 1.1', 'Tag 1.2'],
+        tags: ['Tag 1.1', 'Tag 1.2']
       },
       {
         id: 5,
@@ -57,7 +57,7 @@ export class ContentListComponent {
         creator: 'Nishi K',
         imgURL: 'https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
         type: 'Sport',
-        tags: ['Tag 1.1', 'Tag 4.5'],
+        tags: ['Tag 1.1', 'Tag 4.5']
       },
       {
         id: 6,
@@ -66,7 +66,7 @@ export class ContentListComponent {
         creator: 'Justin DCruz',
         imgURL: 'https://images.unsplash.com/photo-1514316454349-750a7fd3da3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
         type: 'Hyper',
-        tags: ['Tag 1.9', 'Tag 12'],
+        tags: ['Tag 1.9', 'Tag 12']
       },
       {
         id: 7,
@@ -75,7 +75,7 @@ export class ContentListComponent {
         creator: 'Joe Russo',
         imgURL: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
         type: 'Clasic',
-        tags: ['Tag 3.1', 'Tag 1.2'],
+        tags: ['Tag 3.1', 'Tag 1.2']
       },
       {
         id: 8,
@@ -84,7 +84,7 @@ export class ContentListComponent {
         creator: 'Dinesh Katudia',
         imgURL: 'https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80',
         type: '',
-        tags: ['Tag 2.1', 'Tag 1.2'],
+        tags: ['Tag 2.1', 'Tag 1.2']
       },
     ]
   }
