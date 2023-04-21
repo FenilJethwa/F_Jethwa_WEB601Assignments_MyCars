@@ -10,11 +10,30 @@ import { Content } from '../helper-files/content-interface';
 export class CreateContentComponent {
 
 
-newCar: any = {};
+  newCar: any = {};
+  errMsg: string = '';
 @Output() addCarEvent = new EventEmitter<Content>();
 
 addNewCar(){
-  this.addCarEvent.emit(this.newCar);
-  this.newCar = {};
-}
+    const addCar = new Promise((resolve, reject) => {
+      if (!this.newCar.title) {
+        reject('Title is required');
+      } else if (!this.newCar.description) {
+        reject('Description is required');
+      } else if (!this.newCar.creator) {
+        reject('Creator is required');
+      } else {
+        this.addCarEvent.emit(this.newCar);
+        this.newCar = {};
+        resolve(this.newCar.title);
+      }
+    });
+
+    addCar.then(title => {
+      this.errMsg = '';
+      console.log(`New Car Added Successfull, Title: ${title}`);
+    }).catch(err => {
+      this.errMsg = err;
+    });
+  }
 }

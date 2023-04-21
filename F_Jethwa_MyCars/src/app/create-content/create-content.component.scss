@@ -1,0 +1,51 @@
+newCar-Section {
+  margin-bottom: 16px;
+  border-bottom: 1px solid black;
+
+  & > div {
+    margin: auto;
+    max-width: 1100px;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .newCarForm {
+
+
+    label {
+      display: block;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 4px 12px;
+      border: 1px solid black;
+      background-color: #fff;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    div {
+      margin: 16px 0px;
+    }
+
+    .addBtn button {
+      color: #fff;
+      cursor: pointer;
+      padding: 8px 15px;
+      transition: all .3s;
+      border: 1px solid black;
+      background-color: #1d1d1d;
+
+      &:hover {
+        color: #000;
+        background-color: #fff;
+      }
+    }
+  }
+}

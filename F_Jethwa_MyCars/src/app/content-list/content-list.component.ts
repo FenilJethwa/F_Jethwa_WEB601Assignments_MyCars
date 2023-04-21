@@ -116,5 +116,4 @@ export class ContentListComponent {
     this.contents.push(newCar);
     this.contents = [...this.contents];
   }
-
 }
