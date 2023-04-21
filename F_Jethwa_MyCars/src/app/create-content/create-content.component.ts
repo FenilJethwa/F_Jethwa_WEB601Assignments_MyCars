@@ -17,20 +17,22 @@ export class CreateContentComponent {
 addNewCar(){
     const addCar = new Promise((resolve, reject) => {
       if (!this.newCar.title) {
-        reject('Title is required');
+        reject('Failed to add, Title is required');
       } else if (!this.newCar.description) {
-        reject('Description is required');
+        reject('Failed to add,Description is required');
       } else if (!this.newCar.creator) {
-        reject('Creator is required');
+        reject('Failed to add,Creator is required');
+      } else if (!this.newCar.id) {
+        reject('Failed to add, Try again');
       } else {
         this.addCarEvent.emit(this.newCar);
-        this.newCar = {};
         resolve(this.newCar.title);
       }
     });
 
     addCar.then(title => {
       this.errMsg = '';
+      this.newCar = {};
       console.log(`New Car Added Successfull, Title: ${title}`);
     }).catch(err => {
       this.errMsg = err;
