@@ -17,7 +17,7 @@ export class MyCarsService {
     this.MessageService.add("Content array loaded!");
     return this.http.get<Content[]>("/api/cars");
   }
-  ddCar(newCar: Content): Observable<Content> {
+  addCar(newCar: Content): Observable<Content> {
     this.MessageService.add(`New Car added`);
     return this.http.post<Content>("/api/cars", newCar, this.httpOptions);
   }

@@ -1,6 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ContentListComponent } from './content-list.component';
 
 describe('ContentListComponent', () => {
