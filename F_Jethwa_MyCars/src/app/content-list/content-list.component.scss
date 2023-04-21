@@ -1,0 +1,93 @@
+main {
+  padding: 15px;
+
+  & > h1 {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .searchForTitle {
+    text-align: center;
+    margin-bottom: 50px;
+
+    div {
+      margin: 12px 0px;
+    }
+
+    input {
+      width: 220px;
+      padding: 8px 15px;
+      border: 1px solid black;
+    }
+
+    button {
+      color: #fff;
+      cursor: pointer;
+      padding: 8px 15px;
+      border: 1px solid black;
+      background-color: #1d1d1d;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+  }
+}
+
+.cards {
+  min-width: 80%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  padding: 15px;
+  width: 400px;
+  margin-bottom: 15px;
+  border: 1px solid gray;
+  transition: all .5s;
+
+  &.noContentType {
+    color: #74F0ED;
+    background-color: black;
+  }
+
+  &.superSport {
+    color: #5ebec4;
+    background-color: #fdf5df;
+  }
+
+  &.nakedSuperSport {
+    color: #000;
+    background-color: #a0aecd;
+  }
+
+  &.matched {
+    border: 5px solid #7dffcd;
+    transform: scale(1.08);
+    box-shadow: 1px 1px 30px #00fa9a;
+  }
+
+
+  img {
+    max-width: 100%;
+    cursor: pointer;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin: 10px 0px;
+    text-align: justify;
+  }
+}
+
+.card.hoverBorder {
+  border: 1px solid red;
+}
