@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Content } from '../helper-files/content-interface';
+import { MyCarsService } from '../services/my-cars.service';
 
 @Component({
   selector: 'app-content-list',
@@ -7,15 +8,19 @@ import { Content } from '../helper-files/content-interface';
   styleUrls: ['./content-list.component.scss']
 })
 export class ContentListComponent {
-  contents: Content[];
+  contents: Content[] = [];
   searchTitle: string = "";
   titleFound: boolean | null = null;
   defaultBike: string = '/assets/images/Car.jpg'
 
-  constructor() {
-    this.contents = [
-      
+  constructor(private MyCarsService: MyCarsService) {
 
+  }
+
+  ngOnInit() {
+    this.MyCarsService.getCars().subscribe(cars => this.contents = cars);
+
+  }
   handleClick(content: Content) {
     console.log(`ID: ${content.id}, Title: ${content.title}`);
   }
@@ -38,9 +43,5 @@ export class ContentListComponent {
       this.titleFound = false;
       cardElements.forEach(card => card.classList.remove('matched'));
     }
-  }
-  addNewCar(newCar: Content) {
-    this.contents.push(newCar);
-    this.contents = [...this.contents];
   }
 }
