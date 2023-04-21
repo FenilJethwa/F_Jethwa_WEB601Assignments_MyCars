@@ -1,1 +1,37 @@
-<p>modify-content works!</p>
+<!--<p>modify-content works!</p>-->
+<section class="newCar-Section">>
+  <div>
+    <h2>Add New Car</h2>
+    <form class="newCarForm" (submit)="addNewCar()">
+
+      <div>
+        <label for="ID">ID:</label> {{newCar.title}}
+        <input type="text" id="title" name="title" [(ngModel)]="newCar.title">
+      </div>
+
+      <div>
+        <label for="desc">Description:</label> {{newCar.description}}
+        <textarea name="description" id="desc" cols="30" rows="4" [(ngModel)]="newCar.description"></textarea>
+      </div>
+
+      <div>
+        <label for="creator">Creator:</label> {{newCar.creator}}
+        <input type="text" id="creator" name="creator" [(ngModel)]="newCar.creator">
+      </div>
+
+      <div>
+        <label for="type">Type:</label>
+        <input type="text" id="type" name="type" [(ngModel)]="newCar.type">
+      </div>
+
+      <div>
+        <label for="img">Image Url:</label>
+        <input type="text" id="img" name="img" [(ngModel)]="newCar.imgURL">
+      </div>
+
+      <div class="addBtn">
+        <button type="submit">Add Bike</button>
+      </div>
+    </form>
+  </div>
+</section>
