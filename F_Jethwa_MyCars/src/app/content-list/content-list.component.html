@@ -17,73 +17,22 @@
 
   <h1>Cars with no type</h1>
   <section class="cards">
-    <div *ngFor="let content of contents | contentType" [id]="content.id" class="card noContentType" appHoverAffect="border">
-
-      <div *ngIf="content.imgURL; else defaultImage">
-        <img [src]="content.imgURL" alt={{content.title}} (click)="handleClick(content)">
-      </div>
-      <ng-template #defaultImage>
-        <img [src]="content.imgURL" alt={{content.title}} (click)="handleClick(content)">
-      </ng-template>
-
-      <h2>{{content.title}}</h2>
-      <p>{{content.description}}</p>
-      <p><strong>Creator:</strong> {{content.creator}}</p>
-      <p *ngIf="content.type" appHoverAffect="underline"><strong>Type:</strong> {{content.type}}</p>
-      <p *ngIf="content.tags">
-        <strong>Tags:</strong>
-        <span *ngFor="let tag of content.tags" appHoverAffect="bold">
-          {{tag}}
-        </span>
-      </p>
+    <div *ngFor="let content of contents | contentType" appHoverAffect="border">
+      <app-content-card [car]="content" [class]="'noContentType'"></app-content-card>
     </div>
   </section>
 
   <h1>Hyper</h1>
   <section class="cards">
-    <div *ngFor="let content of contents | contentType:'Hyper'" [id]="content.id" class="card hyper" appHoverAffect="border">
-
-      <div *ngIf="content.imgURL; else defaultImage">
-        <img [src]="content.imgURL" alt={{content.title}} (click)="handleClick(content)">
-      </div>
-      <ng-template #defaultImage>
-        <img [src]="content.imgURL" alt={{content.title}} (click)="handleClick(content)">
-      </ng-template>
-
-      <h2>{{content.title}}</h2>
-      <p>{{content.description}}</p>
-      <p><strong>Creator:</strong> {{content.creator}}</p>
-      <p *ngIf="content.type" appHoverAffect="underline"><strong>Type:</strong> {{content.type}}</p>
-      <p *ngIf="content.tags">
-        <strong>Tags:</strong>
-        <span *ngFor="let tag of content.tags" appHoverAffect="bold">
-          {{tag}}
-        </span>
-      </p>
+    <div *ngFor="let content of contents | contentType:'Hyper'" appHoverAffect="border">
+      <app-content-card [car]="content" [class]="'hyper Type'"></app-content-card>
     </div>
   </section>
 
   <h1>Super</h1>
   <section class="cards">
-    <div *ngFor="let content of contents | contentType:'Super'" [id]="content.id" class="card super" appHoverAffect="border">
-
-      <div *ngIf="content.imgURL; else defaultImage">
-        <img [src]="content.imgURL" alt={{content.title}} (click)="handleClick(content)">
-      </div>
-      <ng-template #defaultImage>
-        <img [src]="content.imgURL" alt={{content.title}} (click)="handleClick(content)">
-      </ng-template>
-
-      <h2>{{content.title}}</h2>
-      <p>{{content.description}}</p>
-      <p><strong>Creator:</strong> {{content.creator}}</p>
-      <p *ngIf="content.type" appHoverAffect="underline"><strong>Type:</strong> {{content.type}}</p>
-      <p *ngIf="content.tags">
-        <strong>Tags:</strong>
-        <span *ngFor="let tag of content.tags" appHoverAffect="bold">
-          {{tag}}
-        </span>
-      </p>
+    <div *ngFor="let content of contents | contentType:'Super'" appHoverAffect="border">
+      <app-content-card [car]="content" [class]="'super Type'"></app-content-card>
     </div>
   </section>
 </main>

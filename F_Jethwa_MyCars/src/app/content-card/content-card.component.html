@@ -1,0 +1,20 @@
+<div *ngFor="let content of contents | contentType" [id]="content.id" class="card noContentType" appHoverAffect="border">
+
+  <div *ngIf="content.imgURL; else defaultImage">
+    <img [src]="content.imgURL" alt={{content.title}} (click)="handleClick(content)">
+  </div>
+  <ng-template #defaultImage>
+    <img [src]="content.imgURL" alt={{content.title}} (click)="handleClick(content)">
+  </ng-template>
+
+  <h2>{{content.title}}</h2>
+  <p>{{content.description}}</p>
+  <p><strong>Creator:</strong> {{content.creator}}</p>
+  <p *ngIf="content.type" appHoverAffect="underline"><strong>Type:</strong> {{content.type}}</p>
+  <p *ngIf="content.tags">
+    <strong>Tags:</strong>
+    <span *ngFor="let tag of content.tags" appHoverAffect="bold">
+      {{tag}}
+    </span>
+  </p>
+</div>

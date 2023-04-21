@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Content } from '../helper-files/content-interface';
 
 @Component({
@@ -7,4 +7,12 @@ import { Content } from '../helper-files/content-interface';
   styleUrls: ['./content-card.component.scss']
 })
 export class ContentCardComponent {
+}
+@Input() car: any;
+@Input() class: string = '';
+defaultCar: string = '/assets/images/Car.jpg';
+
+handleClick(content: Content) {
+  console.log(`ID: ${content.id}, Title: ${content.title}`);
+}
 }

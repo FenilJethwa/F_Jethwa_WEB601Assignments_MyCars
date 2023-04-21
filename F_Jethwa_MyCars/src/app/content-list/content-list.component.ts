@@ -21,9 +21,7 @@ export class ContentListComponent {
     this.MyCarsService.getCars().subscribe(cars => this.contents = cars);
 
   }
-  handleClick(content: Content) {
-    console.log(`ID: ${content.id}, Title: ${content.title}`);
-  }
+ 
 
   searchByTitle() {
     const matchingCar = this.contents.find(car => car.title.toLowerCase() === this.searchTitle.toLowerCase());
