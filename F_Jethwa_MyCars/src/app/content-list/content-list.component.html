@@ -21,7 +21,7 @@
         <img [src]="content.imgURL" alt={{content.title}} (click)="handleClick(content)">
       </div>
       <ng-template #defaultImage>
-        <img [src]="defaultCar" alt={{content.title}} (click)="handleClick(content)">
+        <img [src]="content.imgURL" alt={{content.title}} (click)="handleClick(content)">
       </ng-template> 
 
       <h2>{{content.title}}</h2>
