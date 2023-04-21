@@ -11,16 +11,7 @@ carById-sec {
       input {
         width: 220px;
         padding: 8px 15px;
-       /* border: 1px solid black;
       
-        }
-      button {
-        color: #fff;
-        cursor: pointer;
-        padding: 8px 15px;
-        border: 1px solid black;
-        background-color: #1d1d1d;
-      }*/
     }
   }
 }
@@ -33,4 +24,5 @@ carById-sec {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
 }
