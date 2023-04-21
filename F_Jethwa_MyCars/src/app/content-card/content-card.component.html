@@ -1,6 +1,6 @@
 
 <mat-card [id]="car.id" [ngClass]="['card', class]" appHoverAffect="border">
-  <mat-card-header>
+  <mat-card-header [matTooltip]="car.title" [matTooltipPosition]="'above'">>
     <div class="card-img">
 
       <div *ngIf="car.imgURL; else defaultImage">
