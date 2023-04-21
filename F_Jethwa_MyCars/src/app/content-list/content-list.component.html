@@ -4,10 +4,13 @@
 
   <section class="searchForTitle">
     <div>
-      <input type="text" [(ngModel)]="searchTitle" placeholder="Search Title here...">
-      <button (click)="searchByTitle()">Search</button>
+      
+    <mat-form-field>
+      <mat-label>Search For Title</mat-label>
+      <input matInput type="text" [(ngModel)]="searchTitle" placeholder="Search Title here">
+    </mat-form-field> <br>
+    <button mat-raised-button color="primary" (click)="searchByTitle()">Search</button>
     </div>
-
     <div *ngIf="titleFound !== null">
       <p [style.color]="titleFound ? 'yellow' : 'crimson'">
         {{titleFound ? 'Car Found' : 'Car not found'}}

@@ -2,9 +2,12 @@
   <section class="carById-sec">
   <div class="idForm">
     <form (submit)="findCarById()">
-      <label for="carId">Enter an ID:</label> <br>
-      <input type="number" min="0" id="carId" name="carId" [(ngModel)]="carId" placeholder="Enter an id">
-      <button>Get Car</button>
+      <mat-form-field>
+        <mat-label for="carId">Enter an ID</mat-label>
+        <input matInput type="number" min="0" id="carId" name="carId" [(ngModel)]="carId" placeholder="Enter an id">
+      </mat-form-field> <br>
+     
+      <button mat-raised-button color="primary" type="submit">Get Car</button>
     </form>
   </div>
   <div class="oneCard">

@@ -3,7 +3,7 @@ carById-sec {
 
   .idForm {
     margin-bottom: 40px;
-
+    text-align:center;
     form {
       max-width: 320px;
       margin: auto;
@@ -11,7 +11,7 @@ carById-sec {
       input {
         width: 220px;
         padding: 8px 15px;
-        border: 1px solid black;
+       /* border: 1px solid black;
       }
 
       button {
@@ -20,7 +20,7 @@ carById-sec {
         padding: 8px 15px;
         border: 1px solid black;
         background-color: #1d1d1d;
-      }
+      }*/
     }
   }
 }
