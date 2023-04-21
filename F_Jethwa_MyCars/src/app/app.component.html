@@ -1,11 +1,24 @@
-<section class="cards">
-  <app-content-card [bike]="oneCarById" [class]="'oneCar'"></app-content-card>
+
+  <section class="carById-sec">
+  <div class="idForm">
+    <form (submit)="findcarById()">
+      <label for="carId">Enter an ID:</label> <br>
+      <input type="number" min="0" id="carId" name="carId" [(ngModel)]="carId" placeholder="Enter an id">
+      <button>Get Car</button>
+    </form>
+  </div>
+  <div class="oneCard">
+    <app-content-card [bike]="oneCarById" [class]="'oneCar'"></app-content-card>
+  </div>
 </section>
 
+
+<hr><app-message></app-message>
+<hr/>
 <app-content-list></app-content-list>
 
 
-<app-message></app-message>
+
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
