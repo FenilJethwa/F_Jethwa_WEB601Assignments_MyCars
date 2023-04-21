@@ -1,20 +1,26 @@
-<div *ngFor="let content of contents | contentType" [id]="content.id" class="card noContentType" appHoverAffect="border">
 
-  <div *ngIf="content.imgURL; else defaultImage">
-    <img [src]="content.imgURL" alt={{content.title}} (click)="handleClick(content)">
+<div [id]="car.id" [ngClass]="['card', class]" appHoverAffect="border">
+
+  <div class="card-img">
+    <div *ngIf="car.imgURL; else defaultImage">
+
+      <img [src]="car.imgURL" alt={{car.title}} (click)="handleClick(car)">
+    </div>
+    <ng-template #defaultImage>
+      <img [src]="content.imgURL" alt={{car.title}} (click)="handleClick(car)">
+    </ng-template>
   </div>
-  <ng-template #defaultImage>
-    <img [src]="content.imgURL" alt={{content.title}} (click)="handleClick(content)">
-  </ng-template>
 
-  <h2>{{content.title}}</h2>
-  <p>{{content.description}}</p>
-  <p><strong>Creator:</strong> {{content.creator}}</p>
-  <p *ngIf="content.type" appHoverAffect="underline"><strong>Type:</strong> {{content.type}}</p>
-  <p *ngIf="content.tags">
-    <strong>Tags:</strong>
-    <span *ngFor="let tag of content.tags" appHoverAffect="bold">
-      {{tag}}
-    </span>
-  </p>
+  <div class="card-body">
+    <h2>{{car.title}}</h2>
+    <p>{{car.description}}</p>
+    <p><strong>Creator:</strong> {{car.creator}}</p>
+    <p *ngIf="car.type" appHoverAffect="underline"><strong>Type:</strong> {{car.type}}</p>
+    <p *ngIf="car.tags">
+      <strong>Tags:</strong>
+      <span *ngFor="let tag of car  .tags" appHoverAffect="bold">
+        {{tag}}
+      </span>
+    </p>
+  </div>
 </div>
