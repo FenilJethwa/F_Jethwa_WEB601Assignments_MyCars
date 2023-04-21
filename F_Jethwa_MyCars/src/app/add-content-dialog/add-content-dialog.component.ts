@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-add-content-dialog',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-content-dialog.component.scss']
 })
 export class AddContentDialogComponent {
+
+  newCar: any = {};
+
+  constructor(public dialogRef: MatDialogRef<AddContentDialogComponent>) { }
+
+  addNewCar() {
+    this.newCar = {};
+  }
 
 }

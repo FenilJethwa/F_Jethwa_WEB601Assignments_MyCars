@@ -1,0 +1,33 @@
+div {
+  margin: auto;
+  max-width: 1100px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.newCarForm {
+
+  label {
+    display: block;
+  }
+
+  mat-form-field {
+    width: 100%;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 4px 12px;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  div {
+    margin: 16px 0px;
+  }
+}

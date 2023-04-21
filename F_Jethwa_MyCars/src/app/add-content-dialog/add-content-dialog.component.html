@@ -1,1 +1,54 @@
-<p>add-content-dialog works!</p>
+<div>
+  <h2 mat-dialog-title>Add New Car</h2>
+   <mat-dialog-content>
+     <form class="newCarForm" (submit)="addNewCar()">
+
+       <div>
+         <mat-form-field appearance="fill">
+           <mat-label for="id">ID</mat-label>
+           <input matInput type="text" id="id" name="id" disabled>
+         </mat-form-field>
+       </div>
+
+       <div>
+         <mat-form-field appearance="fill">
+           <mat-label for="title">Title</mat-label>
+           <input matInput type="text" id="title" name="title" [(ngModel)]="newCar.title">
+         </mat-form-field>
+       </div>
+
+       <div>
+         <mat-form-field>
+           <mat-label for="desc">Description</mat-label>
+           <textarea matInput name="description" id="desc" cols="30" rows="4" [(ngModel)]="newCar.description"></textarea>
+         </mat-form-field>
+       </div>
+
+       <div>
+         <mat-form-field>
+           <mat-label for="creator">Creator</mat-label>
+           <input matInput type="text" id="creator" name="creator" [(ngModel)]="newCar.creator">
+         </mat-form-field>
+       </div>
+
+       <div>
+         <mat-form-field>
+           <mat-label for="type">Type</mat-label>
+           <input matInput type="text" id="type" name="type" [(ngModel)]="newCar.type">
+         </mat-form-field>
+       </div>
+
+       <div>
+         <mat-form-field>
+           <mat-label for="img">Image Url</mat-label>
+
+           <input matInput type="text" id="img" name="img" [(ngModel)]="newCar.imgURL">
+         </mat-form-field>
+       </div>
+
+       <div class="addBtn">
+         <button mat-raised-button color="primary" type="submit">Add Car</button>
+       </div>
+     </form>
+</mat-dialog-content>
+</div>
