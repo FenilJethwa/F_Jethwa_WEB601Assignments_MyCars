@@ -39,7 +39,7 @@
 
   <h1>Hyper Cars</h1>
   <section class="cards">
-    <div *ngFor="let content of contents | contentType:'Super Sport'" [id]="content.id" class="card hyper" appHoverAffect="border">
+    <div *ngFor="let content of contents | contentType:'Hyper'" [id]="content.id" class="card hyper" appHoverAffect="border">
 
       <div *ngIf="content.imgURL; else defaultImage">
         <img [src]="content.imgURL" alt={{content.title}} (click)="handleClick(content)">
@@ -63,7 +63,7 @@
 
   <h1>Super</h1>
   <section class="cards">
-    <div *ngFor="let content of contents | contentType:'Naked Super Sport'" [id]="content.id" class="card super" appHoverAffect="border">
+    <div *ngFor="let content of contents | contentType:'Super'" [id]="content.id" class="card super" appHoverAffect="border">
 
       <div *ngIf="content.imgURL; else defaultImage">
         <img [src]="content.imgURL" alt={{content.title}} (click)="handleClick(content)">

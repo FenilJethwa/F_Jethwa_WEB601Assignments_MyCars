@@ -1,6 +1,6 @@
 {
   "name": "f-jethwa-my-cars",
-  "version": "0.0.0",
+  "version": "0.0.4",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

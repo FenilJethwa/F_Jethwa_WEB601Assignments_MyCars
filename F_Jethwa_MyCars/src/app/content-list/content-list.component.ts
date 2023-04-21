@@ -13,7 +13,7 @@ export class ContentListComponent {
   defaultBike: string = '/assets/images/Car.jpg'
 
   constructor() {
-    this.contentArray = [
+    this.contents = [
       {
         id: 1,
         title: 'My First Content',
