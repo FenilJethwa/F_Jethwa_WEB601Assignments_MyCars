@@ -7,7 +7,7 @@
       <img [src]="car.imgURL" alt={{car.title}} (click)="handleClick(car)">
     </div>
     <ng-template #defaultImage>
-      <img [src]="content.imgURL" alt={{car.title}} (click)="handleClick(car)">
+      <img [src]="car.imgURL" alt={{car.title}} (click)="handleClick(car)">
     </ng-template>
   </div>
 
@@ -18,7 +18,7 @@
     <p *ngIf="car.type" appHoverAffect="underline"><strong>Type:</strong> {{car.type}}</p>
     <p *ngIf="car.tags">
       <strong>Tags:</strong>
-      <span *ngFor="let tag of car  .tags" appHoverAffect="bold">
+      <span *ngFor="let tag of car.tags" appHoverAffect="bold">
         {{tag}}
       </span>
     </p>

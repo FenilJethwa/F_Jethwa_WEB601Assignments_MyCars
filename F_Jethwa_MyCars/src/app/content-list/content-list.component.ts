@@ -11,7 +11,7 @@ export class ContentListComponent {
   contents: Content[] = [];
   searchTitle: string = "";
   titleFound: boolean | null = null;
-  defaultBike: string = '/assets/images/Car.jpg'
+  defaultImage: string = '/assets/images/Car.jpg'
 
   constructor(private MyCarsService: MyCarsService) {
 
