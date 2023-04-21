@@ -43,6 +43,7 @@ import { AddContentDialogComponent } from './add-content-dialog/add-content-dial
     MatDialogModule,
     MatCardModule,
     MatIconModule,
+    MatTooltipModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
       dataEncapsulation: false,
       delay: 1000
