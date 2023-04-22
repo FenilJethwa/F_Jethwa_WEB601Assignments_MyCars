@@ -15,8 +15,7 @@
 
   </mat-card-header>
   <mat-card-content class="card-body">
-    <h2>{{car.title}}</h2>
-    <p>{{car.description}}</p>
+    <h2><a routerLink="/contents/{{car.id}}">{{car.title}}</a></h2>
     <p><strong>Creator:</strong> {{car.creator}}</p>
 
   </mat-card-content>

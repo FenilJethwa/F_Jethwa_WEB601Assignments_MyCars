@@ -10,20 +10,11 @@ import { MyCarsService } from './services/my-cars.service';
 })
 export class AppComponent {
   title = 'F_Jethwa_MyCars';
-  carId: number = 8;
-  oneCarById: any = {};
+
 
   constructor(private SuperBikeService: MyCarsService) { }
 
   ngOnInit() {
-    this.findCarById();
-  }
 
-  findCarById() {
-    this.SuperBikeService.getCarById(this.carId).subscribe(result => {
-      if (typeof result === "object") {
-        this.oneCarById = result;
-      }
-    });
   }
 }
