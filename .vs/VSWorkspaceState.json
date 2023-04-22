@@ -4,12 +4,12 @@
     "\\F_Jethwa_MyCars",
     "\\F_Jethwa_MyCars\\src",
     "\\F_Jethwa_MyCars\\src\\app",
-    "\\F_Jethwa_MyCars\\src\\app\\content-card",
-    "\\F_Jethwa_MyCars\\src\\app\\content-list",
-    "\\F_Jethwa_MyCars\\src\\app\\Directives",
-    "\\F_Jethwa_MyCars\\src\\app\\helper-files",
-    "\\F_Jethwa_MyCars\\src\\app\\pipes"
+    "\\F_Jethwa_MyCars\\src\\app\\add-content-dialog",
+    "\\F_Jethwa_MyCars\\src\\app\\message",
+    "\\F_Jethwa_MyCars\\src\\app\\modify-content",
+    "\\F_Jethwa_MyCars\\src\\app\\services",
+    "\\F_Jethwa_MyCars\\src\\assets",
+    "\\F_Jethwa_MyCars\\src\\assets\\images"
   ],
-  "SelectedNode": "\\F_Jethwa_MyCars\\src\\app\\content-list\\content-list.component.ts",
   "PreviewInSolutionExplorer": false
 }
