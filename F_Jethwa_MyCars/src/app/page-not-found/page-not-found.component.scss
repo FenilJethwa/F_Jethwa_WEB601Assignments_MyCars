@@ -1,4 +1,20 @@
 section {
-  padding: 3rem 1rem;
+  height: 100vh;
+  display: flex;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
+
+section h1 {
+  font-size: 4rem;
+}
+
+section h3 {
+  font-size: 2rem;
+}
+
+section .backBtn a {
+  margin: 1rem 0;
+  text-decoration: none;
+  : none;
