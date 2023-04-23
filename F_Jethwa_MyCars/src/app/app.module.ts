@@ -50,7 +50,7 @@ import { ContentDetailComponent } from './content-detail/content-detail.componen
     MatTooltipModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
       dataEncapsulation: false,
-      delay: 1000
+      
     }),
     BrowserAnimationsModule
   ],

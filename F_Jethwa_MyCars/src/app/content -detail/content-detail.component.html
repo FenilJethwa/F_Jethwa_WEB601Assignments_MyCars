@@ -1,1 +1,40 @@
-<p>content-detail works!</p>
+<div class="backBtn">
+  <a mat-raised-button color="accent" routerLink="/contents"><mat-icon>arrow_back</mat-icon> Back to list</a>
+</div>
+
+<mat-card [id]="content.id" [ngClass]="'card'" appHoverAffect="border">
+
+  <mat-card-header>
+    <div class="card-img">
+      <div *ngIf="content.imgURL; else defaultImage">
+        <img mat-card-image [src]="content.imgURL" alt={{content.title}} (click)="handleClick(content)">
+      </div>
+      <ng-template #defaultImage>
+        <img mat-card-image [src]="defaultBike" alt={{content.title}} (click)="handleClick(content)">
+      </ng-template>
+    </div>
+  </mat-card-header>
+
+
+
+
+  <mat-card-content class="card-body">
+    <h2>{{content.title}}</h2>
+    <p>{{content.description}}</p>
+    <p><strong>Creator:</strong> {{content.creator}}</p>
+  </mat-card-content>
+
+
+
+
+  <mat-card-footer>
+    <p *ngIf="content.type" appHoverAffect="underline"><strong>Type:</strong> {{content.type}}</p>
+    <p *ngIf="content.tags">
+      <strong>Tags:</strong>
+      <span *ngFor="let tag of content.tags" appHoverAffect="bold">
+        {{tag}},
+      </span>
+    </p>
+  </mat-card-footer>
+
+</mat-card>
