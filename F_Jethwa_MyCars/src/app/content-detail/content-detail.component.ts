@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Content } from '../helper-files/content-interface';
 import { ActivatedRoute } from '@angular/router';
-import { MyCarsService } from './services/my-cars.service';
+import { MyCarsService } from '../services/my-cars.service';
 @Component({
   selector: 'app-content-detail',
   templateUrl: './content-detail.component.html',
